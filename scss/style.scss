@@ -185,11 +185,27 @@ section{
 }
 
 .product{
-	margin-top: 30px;
+	margin-top: 20px;
 	&__item{
 		h6{
 			margin-top: 15px;
 			color: #ccc;
 		}
+	}
+	&__sale{
+		position: relative;
+		&__new{
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 0 .5rem;
+			color: #fff;
+			background: #f23434
+		}
+	}
+}
+article{
+	.line{
+		margin-top: .5px;
 	}
 }

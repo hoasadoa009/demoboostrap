@@ -125,9 +125,21 @@ section .option ul li {
     border-bottom: 10px solid #ccc; }
 
 .product {
-  margin-top: 30px; }
+  margin-top: 20px; }
   .product__item h6 {
     margin-top: 15px;
     color: #ccc; }
+  .product__sale {
+    position: relative; }
+    .product__sale__new {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0 .5rem;
+      color: #fff;
+      background: #f23434; }
+
+article .line {
+  margin-top: .5px; }
 
 /*# sourceMappingURL=style.css.map */
