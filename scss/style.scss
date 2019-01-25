@@ -4,6 +4,11 @@ ul,h1,h2,h3,h4,h5,h6,p{
 	margin: 0;
 	padding: 0;
 }
+img{
+	max-width: 100%;
+	height: auto;
+
+}
 ul{
 	margin: 0;
 	padding: 0;
@@ -206,6 +211,48 @@ section{
 }
 article{
 	.line{
-		margin-top: .5px;
+		margin-top: 1rem;
+	}
+	.product__article{
+		position: relative;
+		h6{
+			color: #ccc;
+			padding: .7rem 0;
+		}
+		p{
+			padding: .5rem 0;
+		}
+		&__new{
+			position: absolute;
+			padding: 0 .5rem;
+			top: 0;
+			left: 0;
+			color: #fff;
+			background: #f23434
+		}
+	}
+	.list__article{
+		position: relative;
+		&__sale{
+			position: absolute;
+			padding: 0 .4rem;
+			top: 0;
+			left: 0;
+			color: #fff;
+		}
+	}
+}
+.formbanner{
+	margin-top: 42px;
+	min-height: 260px;
+	background-size: cover;
+	background-image: url('../images/form-banner.jpg');
+	form{
+		display: flex;
+		justify-content: center;
+
+		input[type=text]{
+			width: 50%;
+		}
 	}
 }

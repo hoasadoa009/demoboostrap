@@ -2,6 +2,10 @@ ul, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0; }
 
+img {
+  max-width: 100%;
+  height: auto; }
+
 ul {
   margin: 0;
   padding: 0;
@@ -140,6 +144,39 @@ section .option ul li {
       background: #f23434; }
 
 article .line {
-  margin-top: .5px; }
+  margin-top: 1rem; }
+article .product__article {
+  position: relative; }
+  article .product__article h6 {
+    color: #ccc;
+    padding: .7rem 0; }
+  article .product__article p {
+    padding: .5rem 0; }
+  article .product__article__new {
+    position: absolute;
+    padding: 0 .5rem;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: #f23434; }
+article .list__article {
+  position: relative; }
+  article .list__article__sale {
+    position: absolute;
+    padding: 0 .4rem;
+    top: 0;
+    left: 0;
+    color: #fff; }
+
+.formbanner {
+  margin-top: 42px;
+  min-height: 260px;
+  background-size: cover;
+  background-image: url("../images/form-banner.jpg"); }
+  .formbanner form {
+    display: flex;
+    justify-content: center; }
+    .formbanner form input[type=text] {
+      width: 50%; }
 
 /*# sourceMappingURL=style.css.map */
