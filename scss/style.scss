@@ -1,0 +1,197 @@
+
+@import 'function';
+ul,h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.top-header{
+	width: 100%;
+	min-height: 40px;
+	line-height: 40px;
+	background: #383838;
+	color: #a9a9a9;
+	ul li a{
+		padding: 0 20px;
+		text-decoration: none;
+		color: #a9a9a9;
+		border-right: 1px solid #424242;
+		:last-child{
+			border: none;
+			padding-right: 0px;
+		}
+	}
+}
+.bt-header{
+	min-height: 120px;
+	line-height: 120px;
+	border-bottom: 1px solid #ccc
+}
+.cart span{
+	padding: 10px;
+	background: #40bea7
+}
+.menu{
+	line-height: 34px;
+	background: #fbfbfb;
+	.category{
+		background: #40bea7;
+		a{
+			float: left;
+		}
+		h4{
+			font-size: 1em;
+			padding: 6% 10%;
+		}
+	}
+	.menu1 ul li a{
+		color: #636363;
+		padding: 0.5em 1em;
+		
+	}
+}
+.cart-shop{
+	.icon{
+		background: #40bea7;
+
+	}
+}
+.slide{
+	.item{
+		position: relative;
+		.item1{
+			position: absolute;
+			bottom: 15%;
+			.content{
+				width: 100%;
+				height: auto;
+				h3{
+					text-transform: uppercase;
+					padding: 3% 0;
+				}
+				p{
+					padding: 3% 0;
+				}
+			}
+		}
+	}
+}
+
+main{
+	.top-rated{
+		ul{
+
+			li{
+
+				}
+				a{
+					text-decoration: none;
+					img{
+						float: left;
+					}
+					h6{
+						color: #ccc;
+					}
+				}
+			}
+		}
+	}
+.banner-aside{
+	padding: 2rem 0;
+	img{
+		width: 98%;
+	}
+}
+.widget{
+	.testimoals{
+		p{
+			font-size: 14px;
+		}
+		span{
+			color: #ccc;
+		}
+		a{
+			padding: 8px;
+		color: #000;
+
+		}
+	}
+}
+.widget-our-brands{
+	padding: 2rem 0;
+	.img-our-brands{
+		padding: 1rem 0;
+	}
+	> div a{
+		padding: 8px;
+		color: #000;
+
+	}
+}
+section{
+	.option{
+		ul{
+			li{
+				padding: 0 1rem;
+				a{
+					text-transform: uppercase;
+					color: #ccc;
+
+				}
+
+			}
+		}
+	}
+}
+.nav-item{
+	position: relative;
+	&:nth-child(2) a{
+		color: #000;
+		font-weight: bold;
+	}
+	&:after{
+		 content: "";
+	    display: block;
+	    border-right: 1px solid #ccc;
+	    height: 15px;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	    bottom: 0;
+	    margin: auto;
+	}
+	&:last-child{
+
+		&:after{
+			display: none;
+		}
+	}
+}
+.line{
+		margin-top: 2px;
+		height: 10px;
+		border-bottom: 1px solid #ccc;
+	&__tamgiac {
+		margin: auto;
+		width: 0;
+		height: 0;
+		border-left: 7px solid transparent;
+		border-right: 7px solid transparent;
+		border-bottom: 10px solid #ccc;
+	}
+
+}
+
+.product{
+	margin-top: 30px;
+	&__item{
+		h6{
+			margin-top: 15px;
+			color: #ccc;
+		}
+	}
+}
