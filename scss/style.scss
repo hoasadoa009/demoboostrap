@@ -12,16 +12,13 @@ ul,h1,h2,h3,h4,h5,h6,p{
 	margin: 0;
 	padding: 0;
 }
-img{
-	max-width: 100%;
-	height: auto;
 
-}
 ul{
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
+
 .top-header{
 	width: 100%;
 	min-height: 40px;
@@ -39,15 +36,18 @@ ul{
 		}
 	}
 }
+
 .bt-header{
 	min-height: 120px;
 	line-height: 120px;
 	border-bottom: 1px solid #ccc
 }
+
 .cart span{
 	padding: 10px;
 	background: #40bea7
 }
+
 .menu{
 	line-height: 34px;
 	background: #fbfbfb;
@@ -67,12 +67,14 @@ ul{
 		
 	}
 }
+
 .cart-shop{
 	.icon{
 		background: #40bea7;
 
 	}
 }
+
 .slide{
 	.item{
 		position: relative;
@@ -96,16 +98,14 @@ ul{
 
 main{
 	.top-rated{
-		ul{
-
-			li{
-
-				}
-				a{
+		ul {
+			li {
+				a {
 					text-decoration: none;
-					img{
+					img {
 						float: left;
 					}
+
 					h6{
 						color: #ccc;
 					}
@@ -113,10 +113,12 @@ main{
 			}
 		}
 	}
+}
+
 .banner-aside{
 	padding: 2rem 0;
-	
 }
+
 .widget{
 	.testimoals{
 		p{
@@ -132,18 +134,22 @@ main{
 		}
 	}
 }
+
 .widget-our-brands{
 	padding: 2rem 0;
+
 	.img-our-brands{
 		padding: 1rem 0;
 	}
+
 	> div a{
 		padding: 8px;
 		color: #000;
 
 	}
 }
-section{
+
+section {
 	position: relative;
 	.option{
 		ul{
@@ -169,6 +175,7 @@ section{
 		right: 8px;
 	}
 }
+
 .nav-item{
 	position: relative;
 	&:nth-child(2) a{
@@ -193,6 +200,7 @@ section{
 		}
 	}
 }
+
 .line{
 		margin-top: 2px;
 		height: 10px;
@@ -228,6 +236,7 @@ section{
 		}
 	}
 }
+
 article{
 	.line{
 		margin-top: 1rem;
@@ -261,6 +270,7 @@ article{
 		}
 	}
 }
+
 .formbanner{
 	margin-top: 30px;
 
