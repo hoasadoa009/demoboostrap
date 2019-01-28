@@ -136,6 +136,7 @@ main{
 	}
 }
 section{
+	position: relative;
 	.option{
 		ul{
 			li{
@@ -148,6 +149,16 @@ section{
 
 			}
 		}
+	}
+	#prev{
+		position: absolute;
+		top: 10px;
+		left: 8px;
+	}
+	#next{
+		position: absolute;
+		top: 10px;
+		right: 8px;
 	}
 }
 .nav-item{
@@ -243,8 +254,9 @@ article{
 	}
 }
 .formbanner{
-	margin-top: 42px;
-	min-height: 260px;
+	margin-top: 30px;
+
+	min-height: 233px;
 	background-size: cover;
 	background-image: url('../images/form-banner.jpg');
 	form{
