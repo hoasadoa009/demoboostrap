@@ -1,8 +1,6 @@
 @import 'variables';
 @import 'functions';
 
-@import 'custom-bootstrap';
-
 img {
 	max-width: 100%;
 	height: auto;
@@ -53,18 +51,29 @@ ul{
 	background: #fbfbfb;
 	.category{
 		background: #40bea7;
+		white-space: nowrap;
 		a{
-			float: left;
+			display: inline-block;
 		}
 		h4{
+			display: inline-block;
 			font-size: 1em;
 			padding: 6% 10%;
 		}
 	}
-	.menu1 ul li a{
+	.menu1 ul li a {
 		color: #636363;
-		padding: 0.5em 1em;
-		
+		padding: 0.5em 1em;	
+	}
+
+	.menu1 ul li:last-child {
+		display: none;
+	}
+
+	@include responsive(xl){
+		.menu1 ul li:last-child {
+			display: inline-block;
+		}
 	}
 }
 
@@ -178,7 +187,7 @@ section {
 
 .nav-item{
 	position: relative;
-	&:nth-child(2) a{
+	.nav-link-active{
 		color: #000;
 		font-weight: bold;
 	}
