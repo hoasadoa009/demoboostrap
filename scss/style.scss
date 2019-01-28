@@ -12,6 +12,11 @@ ul,h1,h2,h3,h4,h5,h6,p{
 	margin: 0;
 	padding: 0;
 }
+img{
+	max-width: 100%;
+	height: auto;
+
+}
 ul{
 	margin: 0;
 	padding: 0;
@@ -139,6 +144,7 @@ main{
 	}
 }
 section{
+	position: relative;
 	.option{
 		ul{
 			li{
@@ -151,6 +157,16 @@ section{
 
 			}
 		}
+	}
+	#prev{
+		position: absolute;
+		top: 10px;
+		left: 8px;
+	}
+	#next{
+		position: absolute;
+		top: 10px;
+		right: 8px;
 	}
 }
 .nav-item{
@@ -193,11 +209,70 @@ section{
 }
 
 .product{
-	margin-top: 30px;
+	margin-top: 20px;
 	&__item{
 		h6{
 			margin-top: 15px;
 			color: #ccc;
+		}
+	}
+	&__sale{
+		position: relative;
+		&__new{
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 0 .5rem;
+			color: #fff;
+			background: #f23434
+		}
+	}
+}
+article{
+	.line{
+		margin-top: 1rem;
+	}
+	.product__article{
+		position: relative;
+		h6{
+			color: #ccc;
+			padding: .7rem 0;
+		}
+		p{
+			padding: .5rem 0;
+		}
+		&__new{
+			position: absolute;
+			padding: 0 .5rem;
+			top: 0;
+			left: 0;
+			color: #fff;
+			background: #f23434
+		}
+	}
+	.list__article{
+		position: relative;
+		&__sale{
+			position: absolute;
+			padding: 0 .4rem;
+			top: 0;
+			left: 0;
+			color: #fff;
+		}
+	}
+}
+.formbanner{
+	margin-top: 30px;
+
+	min-height: 233px;
+	background-size: cover;
+	background-image: url('../images/form-banner.jpg');
+	form{
+		display: flex;
+		justify-content: center;
+
+		input[type=text]{
+			width: 50%;
 		}
 	}
 }
