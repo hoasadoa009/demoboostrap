@@ -1,6 +1,11 @@
 @import 'variables';
 @import 'functions';
 
+body {
+	font-family: 'Lato';
+	color: $black;
+}
+
 img {
 	max-width: 100%;
 	height: auto;
@@ -15,6 +20,15 @@ ul{
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+
+a {
+	color: inherit;
+	transition: 0.35s all;
+}
+
+a:hover {
+	text-decoration: none;
 }
 
 .top-header{
@@ -61,18 +75,58 @@ ul{
 			padding: 6% 10%;
 		}
 	}
+
+	.menu1 ul li { position: relative; }
 	.menu1 ul li a {
 		color: #636363;
-		padding: 0.5em 1em;	
+		// padding: 0.5em 1em;	
 	}
 
-	.menu1 ul li:last-child {
+	.menu1 > ul > li:last-child {
 		display: none;
 	}
 
-	@include responsive(xl){
-		.menu1 ul li:last-child {
+
+	.menu1 ul li ul {
+		transition: 0.25s all ease;
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		left: 0;
+		top: 110%;
+		z-index: 9;
+		background: $white;
+		min-width: 220px;
+	}
+
+
+	.menu1 ul li:hover > ul {
+		visibility: visible;
+		opacity: 1;
+		top: 100%;
+	}
+
+	.menu1 ul li ul li {
+		display: block;
+	}
+
+
+	.menu1 ul li ul li:hover {
+		transition: 0.25s all ease;
+		background: $teal;
+		a {color: $white;}
+	}
+
+	.menu1 ul li ul li a {
+		padding: 5px 15px;
+	}
+
+	@include responsive(xl) {
+		.menu1 > ul > li:last-child {
 			display: inline-block;
+		}
+		.menu ul li ul {
+			display: block;
 		}
 	}
 }
@@ -175,13 +229,13 @@ section {
 	}
 	#prev{
 		position: absolute;
-		top: 10px;
-		left: 8px;
+		top: 0;
+		left: 0;
 	}
 	#next{
 		position: absolute;
-		top: 10px;
-		right: 8px;
+		top: 0;
+		right: 0;
 	}
 }
 
@@ -211,37 +265,60 @@ section {
 }
 
 .line{
-		margin-top: 2px;
-		height: 10px;
-		border-bottom: 1px solid #ccc;
+	margin-top: 2px;
+	height: 8px;
+	border-bottom: 1px solid $grey-lighter;
 	&__tamgiac {
 		margin: auto;
 		width: 0;
 		height: 0;
-		border-left: 7px solid transparent;
-		border-right: 7px solid transparent;
-		border-bottom: 10px solid #ccc;
+		border-left: 9px solid transparent;
+		border-right: 9px solid transparent;
+		border-bottom: 7px solid $grey-lighter;
 	}
 
 }
 
-.product{
-	margin-top: 20px;
-	&__item{
-		h6{
-			margin-top: 15px;
-			color: #ccc;
-		}
+.product {
+	font-family: 'Lato';
+	position: relative;
+	
+	&__heading {
+		font-family: 'Raleway';
+		font-size: 18px;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: bold;
+		padding: 0 0 8px 0;
 	}
-	&__sale{
-		position: relative;
-		&__new{
-			position: absolute;
-			top: 0;
-			left: 0;
-			padding: 0 .5rem;
-			color: #fff;
-			background: #f23434
+	&__category {
+		color: $grey-light;
+		font-size: $font-base;
+		text-transform: uppercase;
+		font-weight: 400;
+		padding-top: 10px;
+		padding-bottom: 3px;
+		display: block;
+	}
+	&__title {
+		font-size: $font-base;
+		padding-bottom: 3px;
+	}
+	&__price {
+		font-size: $font-base + 2px;
+		display: block;
+	}
+	&__rarity {
+		position: absolute;
+		padding: 3px 6px;
+		font-size: $font-xs;
+		font-weight: bold;
+		top: 0;
+		left: 0;
+		color: #fff;
+		background: #f23434;
+		&--dark {
+			background: $black;
 		}
 	}
 }
@@ -260,12 +337,7 @@ article{
 			padding: .5rem 0;
 		}
 		&__new{
-			position: absolute;
-			padding: 0 .5rem;
-			top: 0;
-			left: 0;
-			color: #fff;
-			background: #f23434
+			
 		}
 	}
 	.list__article{
@@ -293,20 +365,6 @@ article{
 		input[type=text]{
 			width: 50%;
 		}
-	}
-}
-
-.line{
-	margin-top: 2px;
-	height: 10px;
-	border-bottom: 1px solid #ccc;
-	&__tamgiac {
-		margin: auto;
-		width: 0;
-		height: 0;
-		border-left: 9px solid transparent;
-		border-right: 9px solid transparent;
-		border-bottom: 9px solid #e1e1e1;
 	}
 }
 

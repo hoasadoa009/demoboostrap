@@ -14,8 +14,7 @@ $container-max-widths: (
 );
 
 $theme-colors: (
-  "primary": $red,
-  "framgia": mix($orange, $red, 60%)
+  "dark": #3f3f3f
 );
 
 @import "bootstrap/bootstrap";
