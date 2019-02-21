@@ -1,0 +1,264 @@
+.section {
+	&__title {
+		font-size: $font-lg;
+		color: $black;
+		margin-bottom: 10px;
+	}
+}
+
+.publish-info {
+	display: inline-block;
+	padding: 6px 12px 10px;
+	background: $white;
+	font-weight: bold;
+	line-height: 1;
+
+	&--dark {
+		border: 2px solid $teal;
+		color: $white;
+		background: $black;
+	}
+
+	&__publish-day {
+		display: block;
+		font-size: $font-lg;
+		padding-bottom: 3px;
+		border-bottom: 1px solid #40bea7;
+	}
+
+	&__publish-month {
+		display: block;
+		text-transform: uppercase;
+		font-size: $font-sm;
+	}
+}
+
+.latest-news {
+	margin-top: 70px;
+	color: $black;
+	margin-bottom: 90px;
+
+	&__list {
+		margin-top: 40px;
+	}
+
+	&__item {
+		margin-bottom: 25px;
+	}
+
+	&__image {
+		position: relative;
+	}
+
+	&__publish-info {
+		position: absolute;
+		left: 15px;
+		top: 15px;
+	}
+
+	&__content {
+		position: relative;
+		padding: 20px 15px;
+		border: 1px solid #e6e6e6;
+		font-size: $font-base - 1px;
+	}
+
+	&__title {
+		font-size: $font-base + 2px;
+		color: $black;
+		margin-bottom: 15px;
+
+	}
+
+	&__more {
+		display: block;
+		font-weight: bold;
+		color: $grey;
+		margin-top: 12px;
+	}
+
+	&__exceprt {
+		text-align: justify;
+	}
+
+	&__comments {
+		.fa {
+			color: $teal;
+		}
+		color: $grey-light;
+		position: absolute;
+		bottom: 15px;
+		right: 0;
+		padding-right: 15px;
+	}
+
+	@include responsive(lg){
+		&__item {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.video-parallax {
+	position: relative;
+	padding: 100px 0;
+	background: url("../images/video-parallax.jpg") no-repeat center center;
+	color: $white;
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.6);
+		z-index: 1;
+	}
+	&__content {
+		position: relative;
+		z-index: 2;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: 'Raleway';
+	}
+	&__title {
+		font-weight: bold;
+		font-size: $font-xl;
+		margin-bottom: 12px;
+	}
+	&__subtitle {
+		font-weight: normal;
+		font-size: $font-base + 2px;
+	}
+}
+
+.footer {
+	padding: 75px 0;
+	background: $black;
+	color: $white;
+	&__title {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-family: 'Raleway';
+		font-size: $font-md;
+		margin-bottom: 30px;
+	}
+
+	&__content {
+		line-height: 1.8;
+		color: $grey;
+	}
+}
+
+.footer-about-us {
+	&__line {
+		color: $white;
+		span {
+			color: $grey;
+		}
+	}
+}
+
+.footer-recent-post {
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 2px solid $black-alt;
+
+	&:last-child {
+		padding-bottom: 0;
+		margin-bottom: 0;
+		border: none;
+	}
+
+	.row {
+		margin-left: -5px;
+		margin-right: -5px;
+		> .col {
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+	}
+
+	&__title {
+		margin-top: -7px;
+		line-height: 1.5;
+		display: inline-block;
+		vertical-align: top;
+		font-size: $font-base;
+		font-weight: normal;
+	}
+}
+
+.footer-social {
+
+	margin-top: 30px;
+	
+	&__item {
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		color: $white;
+		text-align: center;
+		background: $black-alt;
+		display: inline-block;
+	}
+}
+
+.footer-bottom {
+	margin-top: 50px;
+	border-top: 2px solid $black-alt;
+	padding-top: 40px;
+	position: relative;
+	&__hr-image {
+		position: absolute;
+		top: -20px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		text-align: center;
+		background-color: $black;
+		padding: 0 40px;
+	}
+
+	&__copyright {
+		text-align: center;
+		display: block;
+		color: $grey;
+	}
+
+	&__payments {
+		font-size: 0;
+		margin-top: 15px;
+		text-align: center;
+	}
+
+	&__payment {
+		display: inline-block;
+		height: 20px;
+		background: url('../images/payment-icons.png') no-repeat;
+		margin-left: 15px;
+		&:first-child {
+			margin-left: 0;
+		}
+		&.--visa {
+			width: 35px;
+			background-position: 0 0;
+		}
+		&.--ae {
+			width: 50px;
+			background-position: -54px 0;
+		}
+		&.--discover {
+			width: 47px;
+			background-position: -120px 0;
+		}
+		&.--mastercard {
+			width: 33px;
+			background-position: -184px 0;
+		}
+		&.--paypal {
+			width: 57px;
+			background-position: -235px 0;
+		}
+	}
+}
